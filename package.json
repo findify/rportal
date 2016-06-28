@@ -1,0 +1,30 @@
+{
+  "name": "@findify/rportal",
+  "version": "1.0.0",
+  "description": "A simple portal components that allows also re-routing to a target element. Useful for creating 3rd party widgets.",
+  "main": "dist/rportal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/findify/rportal.git"
+  },
+  "keywords": [
+    "reactjs",
+    "portal"
+  ],
+  "author": "wojciak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/findify/rportal/issues"
+  },
+  "homepage": "https://github.com/findify/rportal#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-ts": "^5.5.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}

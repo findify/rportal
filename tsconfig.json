@@ -1,0 +1,21 @@
+{
+  "command": "tsc",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "outDir": "dist",
+    "declaration": true,
+    "jsx": "react"
+  },
+  "files": [
+    "typings/index.d.ts",
+    "src/Portal.tsx"
+  ]
+}
