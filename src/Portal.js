@@ -12,6 +12,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
+/*vendor*/
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Portal = (function (_super) {
@@ -42,7 +43,7 @@ var Portal = (function (_super) {
         this._portalTo && this._portalTo.removeChild(this._destination);
     };
     Portal.prototype.componentDidUpdate = function () {
-        ReactDOM.render(React.createElement("div", __assign({className: this._name}, this.props), this.props.children), this._destination);
+        ReactDOM.render(<div className={this._name} {...this.props}>{this.props.children}</div>, this._destination);
     };
     return Portal;
 }(React.Component));
