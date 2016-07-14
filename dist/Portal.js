@@ -4,14 +4,6 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
-};
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Portal = (function (_super) {
@@ -42,7 +34,7 @@ var Portal = (function (_super) {
         this._portalTo && this._portalTo.removeChild(this._destination);
     };
     Portal.prototype.componentDidUpdate = function () {
-        ReactDOM.render(React.createElement("div", __assign({className: this._name}, this.props), this.props.children), this._destination);
+        ReactDOM.render(React.createElement("div", React.__spread({className: this._name}, this.props), this.props.children), this._destination);
     };
     return Portal;
 }(React.Component));
