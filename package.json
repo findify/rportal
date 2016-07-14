@@ -1,6 +1,6 @@
 {
   "name": "@findify/rportal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple portal components that allows also re-routing to a target element. Useful for creating 3rd party widgets.",
   "main": "dist/rportal.js",
   "scripts": {
